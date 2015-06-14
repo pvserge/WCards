@@ -15,8 +15,8 @@ public class Data {
 	}
 	
 	public Map<String, String> initDict(){
-		setVocab("key", "ключ");
-		setVocab("look", "смотреть");
+		setVocab("key", "РєР»СЋС‡");
+		setVocab("look", "СЃРјРѕС‚СЂРµС‚СЊ");
 		return Vocab;
 	}
 

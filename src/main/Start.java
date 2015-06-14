@@ -10,12 +10,29 @@ public class Start {
 		
 		wordsDeck.initDeck();
 		
-		System.out.println("Hi there!");
 		ArrayList<Card> cards = wordsDeck.getCards();
-		for(int i = 0; i < cards.size(); i++){
-			System.out.println(cards.get(i).getWord());
-			System.out.println(cards.get(i).getTranslation());
+		
+		Scanner scan = new Scanner(System.in);
+		String user_input = "";
+		
+		while (!user_input.toUpperCase().equals("QUIT")){ 
+			for(int i = 0; i < cards.size(); i++){
+				System.out.println("Press any key to see a word ('quit' for exit)!");
+				user_input = scan.nextLine();
+				if(user_input.toUpperCase().contains("QUIT")) break;
+				System.out.println(cards.get(i).getWord());
+				System.out.println();
+				System.out.println("Press any key to see a tranclation ('quit' for exit)!");
+				user_input = scan.nextLine();
+				if(user_input.toUpperCase().contains("QUIT")) break;
+				System.out.println(cards.get(i).getTranslation());
+				System.out.println();
+			}
 		}
+		
+		System.out.println("Bye!");
+		
+		scan.close();
 
 	}
 
