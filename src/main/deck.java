@@ -9,7 +9,7 @@ public class Deck {
 
 	public void initDeck(){
 		
-		Map<String, String> vocab = Words.initDict();
+		Map<String, String> vocab = Words.initDict("data\\test_vocab.txt");
 		int i = 0;
 		
 		for (Map.Entry<String, String> entry: vocab.entrySet()) { 
