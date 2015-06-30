@@ -6,8 +6,11 @@ public class Start {
 	public static void main(String[] args){
 		// TODO Auto-generated method stub
 
+		Config conf = new Config();
+		conf.readConfig();
+		String dataFile = conf.get_dataFile();
+
 		Deck wordsDeck = new Deck();
-		String dataFile = "data\\test_vocab.txt";
 		wordsDeck.initDeck(dataFile);
 		
 		ArrayList<Card> cards = wordsDeck.getCards();
