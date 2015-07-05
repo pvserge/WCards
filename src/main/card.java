@@ -47,7 +47,7 @@ public class Card {
 		}
 	}
 	
-	public void reverseState(){
+	public void reverseCard(){
 		if (checkState(0)) {
 			setState(1);
 		} 
