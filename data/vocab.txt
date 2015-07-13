@@ -1,0 +1,5 @@
+goal цель
+key ключ
+look смотреть
+mother мама
+hi привет

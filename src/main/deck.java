@@ -5,9 +5,15 @@ import main.Data;
 
 public class Deck {
 	
+	// Data class object
 	private Data Words = new Data();
+	// Array list of Card objects
 	private ArrayList<Card> Cards = new ArrayList<Card>();
 
+	// methods to initialize Deck from dictionary file
+	// gets full path to dictionary file
+	// creates Array list of Card objects
+	// returns nothing
 	public void initDeck(String filename){
 		
 		Map<String, String> vocab = Words.initDict(filename);
@@ -22,11 +28,24 @@ public class Deck {
 		
 	}
 
+	// getter for Array list of Card objects
+	// gets nothing
+	// returns Cards array
 	public ArrayList<Card> getCards() {
 		return Cards;
 	}
+
+	// setter for Array list of Card objects
+	// gets Cards array list
+	// returns nothing
+	public void setCards(ArrayList<Card> cards) {
+		this.Cards = cards;
+	}
 	
-/*	public void putCardToBottom(Card card, ArrayList<Card> cards){*/
+	// methods to put appropriate card to bottom of Deck
+	// gets Card object
+	// re-orders Positions for all cards in Deck
+	// returns nothing
 	public void putCardToBottom(Card card){
 		card.setPosition(Cards.size());
 		for(int i = 0; i < Cards.size(); i++){
@@ -34,6 +53,11 @@ public class Deck {
 		}
 	}
 	
+	// methods to save Deck of Cards in current order to appropriate file
+	// gets full path to file
+	// creates new array list from Cards
+	// created new vocab and puts values from Cards in Position order
+	// returns nothing
 	public void saveDeckToFile(String filename){
 		Map<String, String> vocab = new LinkedHashMap<>();
 		ArrayList<Card> crd = Cards;
