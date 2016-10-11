@@ -1,4 +1,4 @@
-package main;
+package test;
 
 import static org.junit.Assert.*;
 
@@ -6,6 +6,9 @@ import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+
+import main.Card;
+import main.Deck;
 
 import org.junit.After;
 import org.junit.AfterClass;

@@ -13,7 +13,7 @@ public class Card {
 
 	// class constructor
 	// get string word, string translation, int position and int state 
-	Card(String word, String trans, int pos, int state){
+	public Card(String word, String trans, int pos, int state){
 		setWord(word);
 		setTranslation(trans);
 		setPosition(pos);

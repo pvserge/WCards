@@ -1,4 +1,4 @@
-package main;
+package test;
 
 import static org.junit.Assert.*;
 
@@ -7,6 +7,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.LinkedHashMap;
 import java.util.Map;
+
+import main.Data;
 
 import org.junit.After;
 import org.junit.AfterClass;

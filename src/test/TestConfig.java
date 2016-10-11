@@ -1,6 +1,7 @@
-package main;
+package test;
 
 import static org.junit.Assert.*;
+import main.Config;
 
 import org.junit.After;
 import org.junit.AfterClass;

@@ -1,8 +1,13 @@
-package main;
+package test;
 
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
+
+import main.Card;
+import main.Config;
+import main.Deck;
+import main.Loader;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -96,7 +101,7 @@ public class TestLoader {
 	public void test_setCards() {
 		test_loader.init();
 		ArrayList<Card> crds = test_loader.getCards();
-		crds.add(new Card("test", "тест", 0, 0));
+		crds.add(new Card("test", "пїЅпїЅпїЅпїЅ", 0, 0));
 		test_loader.setCards(crds);
 		assertEquals(crds, test_loader.getCards());
 	}

@@ -1,6 +1,7 @@
-package main;
+package test;
 
 import static org.junit.Assert.*;
+import main.Card;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -22,7 +23,7 @@ public class TestCard {
 
 	@Before
 	public void setUp() throws Exception {
-		card = new Card("key", "ключ", 0, 0);
+		card = new Card("key", "РєР»СЋС‡", 0, 0);
 		assertNotNull(card);
 	}
 
@@ -43,13 +44,13 @@ public class TestCard {
 
 	@Test
 	public void test_getTranslation() {
-		assertEquals("ключ", card.getTranslation());
+		assertEquals("РєР»СЋС‡", card.getTranslation());
 	}
 
 	@Test
 	public void test_setTranslation() {
-		card.setTranslation("новый");
-		assertEquals("новый", card.getTranslation());
+		card.setTranslation("РїСЂРёРІРµС‚");
+		assertEquals("РїСЂРёРІРµС‚", card.getTranslation());
 	}
 	
 	@Test
