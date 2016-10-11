@@ -37,9 +37,9 @@ public class TestDeck {
 		test_data_out = "test_data/test_dict.txt";
 		test_deck = new Deck();		
 		test_cards = new ArrayList<Card>();
-		test_card_1 = new Card("key", "êëş÷", 0, 0);
-		test_card_2 = new Card("hello", "ïğèâåò", 1, 0);
-		test_card_3 = new Card("bye", "ïîêà", 2, 0);
+		test_card_1 = new Card("key", "ĞºĞ»ÑÑ‡", 0, 0);
+		test_card_2 = new Card("hello", "Ğ¿Ñ€Ğ¸Ğ²ĞµÑ‚", 1, 0);
+		test_card_3 = new Card("bye", "Ğ¿Ğ¾ĞºĞ°", 2, 0);
 		
 		test_cards.add(test_card_1);
 		test_cards.add(test_card_2);
