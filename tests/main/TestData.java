@@ -34,9 +34,9 @@ public class TestData {
 		test_data = new Data();
 		test_vocab = new LinkedHashMap<>();
 
-		test_vocab.put("key", "ключ");
-		test_vocab.put("hello", "привет");
-		test_vocab.put("bye", "пока");
+		test_vocab.put("key", "РєР»СЋС‡");
+		test_vocab.put("hello", "РїСЂРёРІРµС‚");
+		test_vocab.put("bye", "РїРѕРєР°");
 		
 		test_data_in = "test_data/test_vocab.txt";
 		test_data_out = "test_data/test_dict.txt";
@@ -62,9 +62,9 @@ public class TestData {
 
 	@Test
 	public void test_setVocab() {
-		test_data.setVocab("key", "ключ");
-		test_data.setVocab("hello", "привет");
-		test_data.setVocab("bye", "пока");
+		test_data.setVocab("key", "РєР»СЋС‡");
+		test_data.setVocab("hello", "РїСЂРёРІРµС‚");
+		test_data.setVocab("bye", "РїРѕРєР°");
 		assertEquals(test_vocab, test_data.getVocab());
 	}
 
@@ -81,7 +81,7 @@ public class TestData {
 
 	@Test
 	public void test_dictToFile() {
-		test_vocab.put("mother", "мама");
+		test_vocab.put("mother", "РјР°РјР°");
 		test_data.dictToFile(test_data_out, test_vocab);
 		test_data.fileToDict(test_data_out);
 		assertEquals(test_vocab, test_data.getVocab());

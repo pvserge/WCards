@@ -23,7 +23,7 @@ public class Config {
 		try{
 			//read config file 
 			Properties props = new Properties();
-			FileInputStream fis = new FileInputStream("config\\config.xml");
+			FileInputStream fis = new FileInputStream("config/config.xml");
 			
 			//get properties from file
 			props.loadFromXML(fis);
